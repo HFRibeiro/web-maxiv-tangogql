@@ -24,7 +24,7 @@ python3 -m tangogql
 
 ### After this if you go to http://localhost:5004/graphiql/ you should see GraphiQL web interface
 
-### Now start following the steps from: https://docs.google.com/document/d/1bgIS02F_c0k90x4cis6qFSyN0zO-fa9W8H-TF3gnShE
+### Now start following the steps from: https://docs.google.com/document/d/1tTkX3oCV9DitVaMQUHmNac-hsO42s8ziTtyqPhqayvU
 
 
 #### PS: From the origin repository from MAXIV I just changed one file, the tangogql/auth.py this file is listening to the mutation function and blocking it, i just change this to find for mutationXX.
