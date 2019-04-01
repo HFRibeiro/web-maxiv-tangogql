@@ -30,8 +30,14 @@
 </head>
 <body>
   <script>
-    var subscriptionsEndpoint = "wss://" + window.location.hostname.replace("www.", "") + window.location.pathname.replace("/graphiql/", "")  + "/socket"; 
-    var endpointURL = window.location.pathname.replace("/graphiql/", "") + "/db";
+    //var subscriptionsEndpoint = "wss://" + window.location.hostname.replace("www.", "") + window.location.pathname.replace("/graphiql/", "")  + "/socket"; 
+    //var endpointURL = window.location.pathname.replace("/graphiql/", "") + "/db";
+    
+    // This is not the definitive solution, just a way to test graphiql subscription, on localhost
+    // To be discussed with MAXIV
+    var subscriptionsEndpoint = 'ws://localhost:5004/socket';
+    var endpointURL = 'http://localhost:5004/db'
+
     // Collect the URL parameters
     var parameters = {};
     window.location.search.substr(1).split('&').forEach(function (entry) {
